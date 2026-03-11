@@ -1,13 +1,13 @@
 public class OopsBannerApp {
     public static void main(String[] args) {
-        // Construct the banner line by line using string concatenation [cite: 58, 60]
+        // Construct each line using String.join("", ...) for efficiency [cite: 174]
         
-        System.out.println("  ** " + "  ** " + "  ** " + "  ** "); 
-        System.out.println(" * * " + " * * " + " * * " + " * "); 
-        System.out.println(" * * " + " * * " + " * * " + " * "); 
-        System.out.println(" * * " + " * * " + " * * " + "  *** "); 
-        System.out.println(" * * " + " * * " + " ** " + "       * "); 
-        System.out.println(" * * " + " * * " + " * " + "       * "); 
-        System.out.println("  ** " + "  ** " + " * " + "  *** "); 
+        System.out.println(String.join("", "  ** ", "  ** ", "  ** ", "  ** "));
+        System.out.println(String.join("", " * * ", " * * ", " * * ", " * "));
+        System.out.println(String.join("", " * * ", " * * ", " * * ", " * "));
+        System.out.println(String.join("", " * * ", " * * ", "  ** ", "  ** "));
+        System.out.println(String.join("", " * * ", " * * ", " * ", "       * "));
+        System.out.println(String.join("", " * * ", " * * ", " * ", "       * "));
+        System.out.println(String.join("", "  ** ", "  ** ", " * ", "  *** "));
     }
 }
